@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/login.css">
+    <script src="js/common.js"></script>
+    <script src="js/jquery-1.11.0.js"></script>
+</head>
+<body>
+    <div class="head">
+        <div class="headLeft">
+                <a href="index.html">
+                    <img src="img/logo.png" alt="">
+                </a>
+                <a href="#"><img src="img/slogan.jpg"/></a>
+        </div>
+        <div class="headRight">
+            <span style="color:#999">欢迎来到酒仙网</span>
+            <a href="sign.html" style="color:#0066cc;margin-left:30px;">免费注册</a>
+            <span style="margin-left:20px;">帮助中心</span>
+        </div>
+    </div>
+    
+    <div class="content">
+        <div class="dl">
+            <p href="" class="two"><i></i></p>
+            <p href="" class="two2"><i></i></p>
+            <div class="kuangti">
+                <div class="tou">
+                    <a href="" style="color:#e4393c;font-weight:bold;">账号登录</a>
+                    <span style="font-size:12px;padding:0 18px;">|</span>
+                    <a href="" style="color: #999;">手机动态密码登录</a>
+                </div>
+                <form action="">
+                    <div class="ipt yh">
+                        <div class="jiaobiao">
+                            <i style="background-position:-38px 10px;"></i>
+                        </div>
+                        <input class="one" type="text" placeholder="用户名/邮箱/手机号">
+                        <div class="tishi ts1">请输入手机号</div>
+                    </div>
+                    <div class="ipt yh">
+                        <div class="jiaobiao">
+                            <i style="background-position:-71px 10px;"></i>
+                        </div>
+                        <input class="one1" type="password" placeholder="密码">
+                        <div class="tishi ts2">请输入密码</div>
+                    </div>
+                    <a class="login">登&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;录</a>
+                   
+                    <div class="wm">
+                         <input type="checkbox"> 自动登录  
+                        <span onclick="st()" style="color: #0066cc;">免费注册</span>
+                        <span>忘记密码</span>
+                    </div> 
+                </form>
+            </div>
+            <div class="last">
+                    <ul>
+                        <li class="hzdl">使用合作账户登录</li>
+                        <li class="qq"></li>
+                        <li class="xinlang"></li>
+                        <li class="zfb"></li>
+                        <li class="baidu"></li>
+                    </ul>
+            </div>
+            
+        </div>
+    </div>
+    <div class="footer-warp">
+            <footer>
+                <p>©  酒仙网  2011 jiuxian.com All  Rights Reserved  京ICP证110141号  京公网安备1101050188221</p>
+                <p style="color:red;">购买前请确认达到法定饮酒年龄！酒仙网不销售任何含酒精产品给18岁以下人士！</p>
+            </footer>
+    </div>
+
+
+
+
+
+
+
+
+<script>
+    function st(){
+        location.assign("sign.html");
+    }
+$(function(){
+    $(".two").click(function(){ 
+        $(this).css("display","none")
+        $(".two2").css("display","block")
+     })
+     $(".two2").click(function(){ 
+        $(this).css("display","none")
+        $(".two").css("display","block")
+     })
+
+     $(".one").blur(function(){
+         var aa = $(this).val();
+         var ues = /^[1][3,4,5,7,8][0-9]{9}$/;
+         if(ues.test(aa)==false){
+             $(".ts1").css("display","block");
+         }else{
+            $(".ts1").css("display","none");
+         }
+     })
+     $(".one1").blur(function(){
+         var bb  = $(this).val();
+         if(bb.length==0){
+             $(".ts2").css("display","block");
+         }else{
+            $(".ts2").css("display","none");
+         }
+     })
+   
+    $(".login").click(function(){
+        // console.log("11")
+        var yhm = $(".one").val();
+        var maa = $(".one1").val();
+        $.get("http://datainfo.duapp.com/shopdata/userinfo.php",{
+            status:"login",
+            userID:yhm,
+            password:maa
+        },function(data){
+            if(data == 0){
+                alert("用户名不存在")
+            }else if(data == 2){
+                alert("用户名与密码不符")
+            }else{
+                data =JSON.parse(data)
+                console.log(data)
+                alert("登录成功")
+                setCookie("username",data.userID,7);
+               location.assign("index.html");
+            }
+
+        })
+        // $.ajax({
+        //     type:"get",
+		// url:"http://datainfo.duapp.com/shopdata/userinfo.php",
+		// data:{
+		// 	status:"login" ,
+		// 	userID:yhm,
+	    // 	password:maa
+		  
+		// },
+		// success:function(data){
+		// 	console.log(data)
+		// }
+        // })
+    })
+    
+})
+
+</script>
+</body>
+</html>

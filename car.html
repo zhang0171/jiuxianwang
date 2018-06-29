@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/car.css">
+    <script src="js/common.js"></script>
+    <script src="js/jquery-1.11.0.js"></script>
+    <script src="js/public.js"></script>
+</head>
+<body>
+        <div id="HEAD">
+                <div class="head">
+                 <div class="headleft">
+                  <p style="float: left;">欢迎来到酒仙网！</p>
+                  <a href="sign.html">请登录</a>
+                  <a href="login.html">免费注册</a>
+                 </div>
+                 <div class="headright">
+                    <a href="" style="width:55px;background:url(img/1.jpg) no-repeat 48px 9px;">我的酒仙</a>
+                    <a href="" style="width:53px;color:red;font-weight: 900;">CEO邮箱</a>
+                    <a href="" style="width:78px;background:url(img/2.jpg) no-repeat 0px 4px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;购物车<i>0</i>件</a>
+                    <a href="" style="color:red;">CLUB会员</a>
+                    <a href="">| 招商入住 |</a>
+                    <a href="" style="width:96.5px; background:url(img/3.jpg) no-repeat 0 3px;"> |</a>
+                    <a href="" style="width:65px; background:url(img/4.jpg) no-repeat 0 8.5px;">&nbsp;&nbsp;&nbsp;&nbsp;网站导航</a>
+                    <a href="" style="width:65px; background:url(img/5.jpg) no-repeat 0 6px;">&nbsp;&nbsp;&nbsp;&nbsp;客户服务</a>
+                    <a href="">客服热线 <span style="color:#cc0000;font-weight: 900;">400-617-999</span></a>
+                 </div>
+                </div>
+               </div>
+               <div class="addHead1">
+                   <a href="">我的订单</a><br>
+                   <a href="">物流追踪</a><br>
+                   <a href="">我的优惠券</a>
+               </div>
+               <div class="addHead2">
+                   <img src="img/jx-wxgzh.png" alt="">
+               </div>
+               <div class="addHead3">
+                 <div class="aH1">
+                     <h3>购物</h3>
+                     <ul>
+                         <li><a href="mailto:">白酒</a></li>
+                         <li><a href="mailto:">葡萄酒</a></li>
+                         <li><a href="mailto:">洋酒</a></li>
+                         <li><a href="mailto:">啤酒</a></li>
+                         <li><a href="mailto:">保健酒</a></li>
+                         <li><a href="mailto:">黄酒</a></li>
+                     </ul>
+                 </div>
+                 <div class="aH1">
+                        <h3>活动</h3>
+                        <ul>
+                            <li><a href="mailto:">清仓</a></li>
+                            <li><a href="mailto:">进口馆</a></li>
+                            <li><a href="mailto:">整箱</a></li>
+                            <li><a href="mailto:">套装</a></li>
+                            <li><a href="mailto:">特惠</a></li>
+                            <li><a href="mailto:">爽爆</a></li>
+                        </ul>
+                    </div>
+                    <div class="aH1">
+                            <h3>其他</h3>
+                            <ul>
+                                <li><a href="mailto:">清仓</a></li>
+                                <li><a href="mailto:">进口馆</a></li>
+                                <li><a href="mailto:">整箱</a></li>
+                                <li><a href="mailto:">套装</a></li>
+                                <li><a href="mailto:">特惠</a></li>
+                                <li><a href="mailto:">爽爆</a></li>
+                            </ul>
+                        </div>
+                    <div class="aH2">
+                        <p>
+                            客户咨询热线：<span style="font-weight:900;color: black;">400-617-9999</span>
+                        </p>
+                    </div>
+               </div>
+               <div class="addHead4">
+                    <a href="">常见问题</a><br>
+                    <a href="">配送说明</a><br>
+                    <a href="">售后服务</a>
+                </div>
+    
+<div class="headBox">
+   <a href="index.html"><img src="img/logo.png" alt="" ></a>
+</div>
+<div class="mpt">
+    <i></i>
+    <span>温馨提示：自营商品实付满100元免运费，偏远地区满500免运费</span>
+
+</div>
+<div class="myCart">
+    <h3>我的购物车</h3>
+    <div class="cartit">
+        <div>
+            <label for="checkAll" style="margin-left:30px;">
+                <input type="checkbox" name="checkAll" id="checkAll">全选 
+            </label>
+            <span style="margin-left:190px;">商品信息</span>
+            <span style="margin-left:100px;">单价</span>
+            <span style="margin-left:100px;">送金币</span>
+            <span style="margin-left:100px;">数量</span>
+            <span style="margin-left:100px;">小计</span>
+            <span style="margin-left:100px;">操作</span>
+        </div>
+    </div>
+    <ul class="oul">
+        <!-- <li class="oli">
+            <input type="checkbox" style="margin-left:30px;">
+            <img src="img/3eee2dc02786464989926cc90ee5c3882.jpg" style="margin-left:40px;">
+            <p style="margin-left:19px;">
+                【清仓】45°古井大曲250ml（6瓶装）
+            </p>
+            <span style="margin-left:27px;">￥<div class="danjia">20.00</div></span>
+            <b style="font-weight:normal;margin-left:90px;">199金币</b>
+            <div class="add" style="margin-left:73px;">
+                <a style="right:2px;">+</a>
+                <a style="left:0">-</a>
+                <input class="int" type="text" value="1">
+            </div>
+            <span style="margin-left:60px;">￥<div class="zjia"></div></span>
+            <div class="delete">删除</div>
+        </li> -->
+    </ul>
+</div>
+
+<script>
+    window.onload=function(){
+        $(".oli").children().css("float","left");
+        // $(".add a").eq(0).click(function(){
+        //    var index = $(this).parent().parent().index()
+        //    var skk = $(".oli").eq(index).find(".danjia").text();
+        //     num++;
+        //     int.val(num);
+        //     $(".oli").eq(index).find(".zjia").html((skk*num).toFixed(2));
+        // })
+        // $(".add a").eq(1).click(function(){
+        //    var index = $(this).parent().parent().index()
+        //    var skk = $(".oli").eq(index).find(".danjia").text();
+        //     num--;
+        //     if(num<=1){
+        //         num=1;
+        //     }
+        //     int.val(num);
+        //     $(".oli").eq(index).find(".zjia").html((skk*num).toFixed(2));
+        // })
+       
+
+
+
+        $("#checkAll").click(function(){
+            $(".oul input").prop("checked",$(this).prop("checked"));
+        })
+        $(".oul input").click(function(){
+            if($(".oul input:checked").length==$(".oul li").length){
+                $("#checkAll").prop("checked",true)
+            }else{
+                $("#checkAll").prop("checked",false)
+            }
+        })
+        $(".delete").click(function(){
+                var id = $(this).attr("data-id");
+                // console.log(id);
+                $.get(
+                    "http://datainfo.duapp.com/shopdata/updatecar.php",
+                    {userID:getCookie("username"),goodsID:id,number:0},
+                    function(res){
+                        alert("确认删除此商品吗？")
+					    location.assign("car.html")
+                    }
+                )
+            })
+
+
+    }
+   
+$(function(){
+    $.getJSON(
+        "http://datainfo.duapp.com/shopdata/getCar.php?callback=?",
+        {userID:getCookie("username")},
+        function(cb){
+            // console.log(cb);
+             var ss ="";
+            for(var i=0;i<cb.length;i++){
+            var zou = ((cb[i].number)*cb[i].price).toFixed(2);
+            ss += `
+            <li class="oli">
+            <input type="checkbox" style="margin-left:30px;">
+            <img src="${cb[i].goodsListImg}" style="margin-left:40px;">
+            <p style="margin-left:19px;">
+                    ${cb[i].goodsName}
+            </p>
+            <span style="margin-left:27px;">￥<div class="danjia">${cb[i].price}</div></span>
+            <b style="font-weight:normal;margin-left:90px;">199金币</b>
+            <div class="add" style="margin-left:73px;">
+                <a class="zouJia" data-id="${cb[i].goodsID}" style="right:2px;">+</a>
+                <a class="zouJian"  data-id="${cb[i].goodsID}" style="left:0">-</a>
+                <input class="int" type="text" value="${cb[i].number}">
+            </div>
+            <span style="margin-left:60px;">￥<div class="zjia">${zou}</div></span>
+            <div data-id="${cb[i].goodsID}" class="delete">删除</div>
+        </li>
+            `
+
+             //  console.log(cb[i].number)
+
+            }
+            $(".oul").append(ss);
+
+
+
+             $(".zouJia").click(function(){
+            var index = $(this).index(".zouJia");
+            console.log(index);
+            var zouDan = $(".danjia").eq(index).html();
+            var zouInt = $(".int").eq(index).val(); 
+            zouInt++;
+            var zouAll = zouDan*zouInt;
+            $(".int").eq(index).val(zouInt);
+            $(".zjia").eq(index).html(parseInt(zouAll));
+        })
+        $(".zouJian").click(function(){
+            var index = $(this).index(".zouJian");
+            console.log(index);
+            var zouDan = $(".danjia").eq(index).html();
+            var zouInt = $(".int").eq(index).val();
+            zouInt--;
+            if(zouInt<=1){
+                zouInt=1;
+            } 
+            var zouAll = zouDan*zouInt;
+            $(".int").eq(index).val(zouInt);
+            $(".zjia").eq(index).html(parseInt(zouAll));
+        })
+        }
+    )
+})
+</script>
+
+    <!--                                                             FOOT ER -->
+        <div id="footer">
+                <div class="footTopBox">
+                    <div class="footTop">
+                        <div class="footerContact">
+                            <i class="publicIcon"></i>
+                            <b style="font-weight:bold;font-size:12px;color:#666;">400-617-9999</b>
+                            <span>客服热线</span>
+                            <span>9:00-23:00</span>
+                            <span>贴心服务</span>
+                        </div>
+                        <div class="footerTopRight">
+                            <div class="ftRight-tit">优惠促销早知道</div>
+                            <div class="ftRight-form">
+                                <input id="subscribe_email" type="text" value name>
+                                <span>请输入您的邮箱地址</span>
+                                <i class="publicIcon"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footSop">
+                      <ul>
+                          <li class="ser01">
+                            <h3>
+                              <i></i>
+                              <span>新手入门</span>
+                            </h3>
+                            <p>
+                             <a href="">购物保障</a>
+                            </p>
+                            <p>
+                              <a href="">服务协议</a>
+                            </p>
+                            <p>
+                             <a href="">发票说明</a>
+                            </p>
+                          </li>
+                          <li class="ser01">
+                                <h3>
+                                  <i></i>
+                                  <span>常见问题</span>
+                                </h3>
+                                <p>
+                                 <a href="">红包使用</a>
+                                </p>
+                                <p>
+                                  <a href="">返现使用</a>
+                                </p>
+                                <p>
+                                 <a href="">兑换码</a>
+                                </p>
+                              </li>
+                              <li class="ser01">
+                                    <h3>
+                                      <i></i>
+                                      <span>配送说明</span>
+                                    </h3>
+                                    <p>
+                                     <a href="">配送时间</a>
+                                    </p>
+                                    <p>
+                                      <a href="">配送服务</a>
+                                    </p>
+                                    <p>
+                                     <a href="">配送说明</a>
+                                    </p>
+                                  </li>
+                                  <li class="ser01">
+                                        <h3>
+                                          <i></i>
+                                          <span>支付方式</span>
+                                        </h3>
+                                        <p>
+                                         <a href="">货到付款</a>
+                                        </p>
+                                        <p>
+                                          <a href="">在线支付</a>
+                                        </p>
+                                        <p>
+                                         <a href="">线下支付</a>
+                                        </p>
+                                      </li>
+                                      <li class="ser01">
+                                            <h3>
+                                              <i></i>
+                                              <span>售后服务</span>
+                                            </h3>
+                                            <p>
+                                             <a href="">购物保障</a>
+                                            </p>
+                                            <p>
+                                              <a href="">服务协议</a>
+                                            </p>
+                                            <p>
+                                             <a href="">发票说明</a>
+                                            </p>
+                                          </li>
+                                          <li class="ser01">
+                                                <h3>
+                                                  <i></i>
+                                                  <span>特色服务</span>
+                                                </h3>
+                                                <p>
+                                                 <a href="">购物保障</a>
+                                                </p>
+                                                <p>
+                                                  <a href="">服务协议</a>
+                                                </p>
+                                                <p>
+                                                 <a href="">发票说明</a>
+                                                </p>
+                                              </li>
+                                            <li class="weiboxin">
+                                                <div class="weibo">
+                                                    <i style="background-position: -140px -74px;"></i>
+                                                    <a href="" style="color:#ffffff;">酒仙新浪微博</a>
+                                                </div>
+                                                <div class="weixin">
+                                                    <i style="background-position: -103px -74px;"></i>
+                                                    <a href="" style="color:#ffffff;">酒仙微信</a>
+                                                </div>
+                                            </li>
+                      </ul>
+                    </div>
+                </div>
+                <div class="footBotBox">
+                        <div class="footBotBox clearfix">
+                                <div class="footerBotLeft">
+                                        <p class="footerInfo">
+                                                <a href="">公司简介<i></i></a>
+                                                <a href="">管理团队<i></i></a>
+                                                <a href="">媒体报道<i></i></a>
+                                                <a href="">联系我们<i></i></a>
+                                                <a href="">招贤纳什<i></i></a>
+                                                <a href="">友情链接<i></i></a>
+                                                <a href="">网站地图<i></i></a>
+                                                <a href="">品牌大全<i></i></a>
+                                        </p>
+                                        <p class="copyright">
+                                                北京酒仙网络科技有限公司&nbsp;&nbsp;©&nbsp;&nbsp;酒仙网&nbsp;&nbsp;&nbsp;2011&nbsp;&nbsp;jiuxian.com&nbsp;&nbsp;All&nbsp;&nbsp;&nbsp;Rights&nbsp;Reserved&nbsp;&nbsp;&nbsp;
+                                            
+                                            <a href="" target="_blank" rel="nofollow">京ICP备17043395号</a>
+                                            &nbsp;&nbsp;&nbsp;京公网安备1101050188221
+                                        </p>
+                                        <p class="friendLink">
+                                                <span class="linkWidth">
+                                                    <a href="">大麦网</a> |
+                                                    <a href="">1折网</a> |
+                                                    <a href="">铁网军事</a> |
+                                                    <a href="">酒仙网白酒</a> |
+                                                    <a href="">酒仙网葡萄酒</a> |
+                                                    <a href="">开放平台招商</a> |
+                                                    <a href="">购酒论坛</a> |
+                                                    <a href="">名鞋库</a> |
+                                                    <a href="">酒仙网团购</a>
+                                                </span>
+                                                <a href="">更多</a>
+                                        </p>
+                                        <p class="footerAddr" style="color:#999; line-height:22px;">
+                                                <span>
+                                                    统一社会信用代码&nbsp;&nbsp;91110302306646672B&nbsp;&nbsp;&nbsp;食品流通许可证编号&nbsp;&nbsp;JY11131010328793&nbsp;&nbsp;&nbsp;
+                                                </span>
+                                        </p>
+                                        <p class="footerAddr" style="color:#999; line-height:22px; padding-bottom:7px;"><span>地址：北京市北京经济技术开发区经海五路58号院8幢4层</span></p>
+                                        <p class="copybot" style="height:47px;">
+                                                <span>
+                                                    <a href="">
+                                                        <img src="img/sf.png">
+                                                    </a>
+                                                </span>
+                                                <a href="">
+                                                        <img src="img/sf.png">
+                                                </a>
+                                                <a href="">
+                                                        <img src="img/sf.png">
+                                                </a>
+                                        </p>
+                                        <p class="footerPro" style="padding:11px 0 6px;color: #cc0000;">购买前请确认达到法定饮酒年龄！酒仙网不销售任何含酒精产品给18岁以下人士！</p>
+                
+                                 </div>
+                                 <div class="footerBotCode">
+                                        <div class="jxPho-code"><p class="codePic"><img alt="手机酒仙网" src="img/jxPho-code.jpg" width="80" height="80"></p><p class="codeText">手机酒仙网</p></div>
+                                        <div class="jkd-code"><p class="codePic"><img alt="微信公众号" src="img/jxPho-code.jpg" width="80" height="80"></p><p class="codeText">微信公众号</p></div>
+                                    </div>
+                                </div>
+                        </div>
+                   </div>
+</body>
+</html>

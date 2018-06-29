@@ -1,0 +1,70 @@
+.List {
+  width: 1920px;
+  height: 598px;
+  margin: 0 auto; }
+  .List img {
+    margin-left: -303.5px; }
+
+#wrap {
+  margin-bottom: 10px; }
+
+.shangpinWrap {
+  margin: 0 auto;
+  width: 1089px;
+  height: auto;
+  overflow: hidden;
+  padding-left: 100px; }
+  .shangpinWrap .shangpin {
+    float: left;
+    width: 240px;
+    height: 339px;
+    margin: 0 10px 10px 0;
+    background: #eeeded;
+    box-sizing: border-box; }
+    .shangpinWrap .shangpin img {
+      width: 240px;
+      height: 240px;
+      border-bottom: 1px dashed gray; }
+    .shangpinWrap .shangpin .spBot {
+      width: 90%;
+      height: 75px;
+      padding: 11px 5% 12px;
+      position: relative; }
+      .shangpinWrap .shangpin .spBot a {
+        display: block;
+        width: 160px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis; }
+      .shangpinWrap .shangpin .spBot a:hover {
+        cursor: pointer;
+        text-decoration: underline; }
+      .shangpinWrap .shangpin .spBot b {
+        float: left;
+        color: #f99a1d;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        font-size: 26px; }
+        .shangpinWrap .shangpin .spBot b span {
+          font-size: 14px; }
+      .shangpinWrap .shangpin .spBot p {
+        float: right;
+        margin-top: 28px;
+        width: 75px;
+        height: 26px;
+        line-height: 26px;
+        background: url(../img/gogo.jpg);
+        text-align: center;
+        font-size: 13px;
+        color: #fff;
+        border-radius: 4px; }
+        .shangpinWrap .shangpin .spBot p:hover {
+          cursor: pointer; }
+
+.up {
+  margin: 0 auto; }
+  .up:hover {
+    cursor: pointer; }
+  .up img {
+    margin-left: -330px; }

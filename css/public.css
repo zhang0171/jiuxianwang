@@ -1,0 +1,532 @@
+@charset "UTF-8";
+body, ul, li, dl, dt, dd, p, ol, h1, h2, h3, h4, h5, h6, form, img, table, fieldset, legend {
+  margin: 0;
+  padding: 0; }
+
+ul, li, ol {
+  list-style: none; }
+
+img, fieldset {
+  border: 0; }
+
+img {
+  display: block; }
+
+a {
+  text-decoration: none;
+  color: #333; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 100; }
+
+body {
+  font-family: "微软雅黑";
+  background: #f6f6f6;
+  position: relative;
+  font-size: 12px; }
+
+input, a {
+  outline: none; }
+
+#HEAD {
+  height: 26px;
+  background: #f2f2f2;
+  display: flex;
+  justify-content: center; }
+  #HEAD .head {
+    width: 1200px;
+    height: 26px;
+    font-size: 12px;
+    color: #999999; }
+    #HEAD .head a {
+      color: #999999; }
+    #HEAD .head .headleft {
+      float: left;
+      width: 370px;
+      height: 26px;
+      line-height: 26px; }
+      #HEAD .head .headleft a:hover {
+        color: #cc0000;
+        text-decoration: underline; }
+    #HEAD .head .headright {
+      float: right;
+      width: 781px;
+      height: 26px;
+      line-height: 26px; }
+      #HEAD .head .headright a {
+        display: inline-block;
+        height: 26px;
+        margin-left: 5px; }
+        #HEAD .head .headright a i {
+          font-style: normal;
+          color: red;
+          font-weight: 900; }
+      #HEAD .head .headright a:hover {
+        color: #cc0000;
+        text-decoration: underline; }
+
+.addHead1 {
+  width: 72px;
+  height: 88px;
+  text-align: center;
+  background: #ffffff;
+  position: absolute;
+  display: none;
+  left: 445px; }
+  .addHead1 a {
+    font-size: 12px;
+    color: #999999; }
+  .addHead1 a:hover {
+    color: #cc0000;
+    text-decoration: underline; }
+
+.addHead2 {
+  width: 96px;
+  height: 88px;
+  position: absolute;
+  background: #ffffff;
+  left: 801px;
+  display: none; }
+  .addHead2 img {
+    width: 96px;
+    height: 88px; }
+
+.addHead3 {
+  width: 204px;
+  height: 324px;
+  display: none;
+  position: absolute;
+  background: #ffffff;
+  left: 901px; }
+  .addHead3 a {
+    font-size: 12px;
+    color: #999999;
+    display: inline-block; }
+  .addHead3 a:hover {
+    color: #cc0000;
+    text-decoration: underline; }
+  .addHead3 .aH1 {
+    width: 165px;
+    height: 80px;
+    padding: 6px 20px 8px;
+    border-bottom: 1px solid #ededed; }
+    .addHead3 .aH1 li {
+      width: 44px;
+      float: left;
+      line-height: 26px;
+      padding: 0 4px 0 7px; }
+  .addHead3 .aH2 {
+    font-size: 12px;
+    color: #999999;
+    text-align: center;
+    padding-top: 11px; }
+
+.addHead4 {
+  width: 72px;
+  height: 88px;
+  text-align: center;
+  background: #ffffff;
+  position: absolute;
+  display: none;
+  left: 980px; }
+  .addHead4 a {
+    font-size: 12px;
+    color: #999999; }
+  .addHead4 a:hover {
+    color: #cc0000;
+    text-decoration: underline; }
+
+#HEAD3 {
+  height: 125px;
+  background: #ffffff;
+  display: flex;
+  justify-content: center; }
+  #HEAD3 .head3 {
+    width: 1200px;
+    height: 125px;
+    color: #999999; }
+    #HEAD3 .head3 a {
+      font-size: 12px;
+      color: #999999; }
+    #HEAD3 .head3 a:hover {
+      color: #cc0000;
+      text-decoration: underline; }
+    #HEAD3 .head3 .head3_1 {
+      width: 257px;
+      height: 65px;
+      float: left;
+      margin-top: 30px; }
+    #HEAD3 .head3 .head3_2 {
+      width: 540px;
+      height: 61px;
+      float: left;
+      margin: 32px 0 0 20px; }
+      #HEAD3 .head3 .head3_2 .sou {
+        width: 449px;
+        height: 37px;
+        border: 3px solid #c00;
+        box-sizing: border-box; }
+      #HEAD3 .head3 .head3_2 .sou1 {
+        display: inline-block;
+        width: 85px;
+        height: 37px;
+        line-height: 35px;
+        background: #cc0000;
+        text-align: center;
+        font-size: 16px;
+        color: #ffffff; }
+        #HEAD3 .head3 .head3_2 .sou1:hover {
+          text-decoration: none; }
+      #HEAD3 .head3 .head3_2 p {
+        width: 540px;
+        height: 18px;
+        line-height: 18px; }
+        #HEAD3 .head3 .head3_2 p a {
+          float: left;
+          margin-left: 7px; }
+    #HEAD3 .head3 .head3_3 {
+      width: 363px;
+      height: 64px;
+      float: right;
+      background: yellow;
+      margin: 33px 0 0 0; }
+
+#NAV {
+  height: 34px;
+  background: #900;
+  display: flex;
+  justify-content: center; }
+  #NAV a {
+    font-size: 12px;
+    color: #666; }
+  #NAV a:hover {
+    text-decoration: underline; }
+  #NAV .nav {
+    width: 1200px;
+    height: 34px; }
+    #NAV .nav .nav1 {
+      width: 190px;
+      height: 100%;
+      line-height: 34px;
+      background: #ce171f;
+      float: left;
+      text-align: center; }
+      #NAV .nav .nav1 .navBox {
+        display: none;
+        z-index: 999999;
+        width: 190px;
+        height: 470px;
+        background: #ffffff; }
+        #NAV .nav .nav1 .navBox li {
+          width: 163px;
+          height: 81px;
+          padding: 0 10px;
+          border-left: 3px solid #fff;
+          border-bottom: 0.8px solid #999999;
+          background: #fff; }
+          #NAV .nav .nav1 .navBox li .x-pic {
+            display: inline-block;
+            width: 14px;
+            height: 20px;
+            position: relative;
+            top: 5.5px;
+            left: -90px;
+            background: url(../img/xuebitu.png) no-repeat -73px -260px; }
+          #NAV .nav .nav1 .navBox li .zxg p {
+            width: 170px;
+            height: 20px; }
+            #NAV .nav .nav1 .navBox li .zxg p a {
+              height: 16px;
+              line-height: 16px;
+              float: left;
+              margin: 2px 3px 2px 0;
+              padding: 0 3px; }
+    #NAV .nav .menu-box {
+      width: 601px;
+      height: 470px;
+      background: #dddd;
+      display: none;
+      position: absolute;
+      top: 185px;
+      left: 218px; }
+      #NAV .nav .menu-box .menucon {
+        width: 381px;
+        height: 470px;
+        float: left;
+        font-size: 12px;
+        display: inline-block;
+        background: #f1f1f1;
+        overflow: hidden; }
+        #NAV .nav .menu-box .menucon a:hover {
+          color: red; }
+        #NAV .nav .menu-box .menucon .menucon1 {
+          width: 110px;
+          height: 100%;
+          text-align: right;
+          float: left; }
+          #NAV .nav .menu-box .menucon .menucon1 p {
+            margin-right: 10px; }
+        #NAV .nav .menu-box .menucon .menucon2 {
+          height: 100%;
+          float: left;
+          width: 271px;
+          background: #ffffff; }
+          #NAV .nav .menu-box .menucon .menucon2 .menucon2_ {
+            height: 10px;
+            margin: 0 auto;
+            width: 240px;
+            border-bottom: 1px dashed #ddd; }
+            #NAV .nav .menu-box .menucon .menucon2 .menucon2_ p {
+              height: 24px;
+              text-align: left; }
+      #NAV .nav .menu-box .menufoc {
+        float: right; }
+        #NAV .nav .menu-box .menufoc:hover {
+          cursor: pointer; }
+    #NAV .nav .nav2 {
+      width: 890px;
+      height: 34px;
+      float: left; }
+      #NAV .nav .nav2 li {
+        display: inline-block;
+        height: 34px;
+        line-height: 34px;
+        text-align: center;
+        float: left;
+        position: relative;
+        padding: 0 22px; }
+        #NAV .nav .nav2 li:hover {
+          background: #ce171f; }
+        #NAV .nav .nav2 li a {
+          display: inline-block;
+          height: 34px;
+          color: white;
+          font-size: 14px;
+          font-family: 微软雅黑; }
+          #NAV .nav .nav2 li a span {
+            display: block;
+            height: 17px;
+            position: absolute;
+            right: 6px;
+            top: -6px;
+            width: 29px;
+            background: url(../img/xuebitu.png) no-repeat 0px -264px; }
+    #NAV .nav .nav3 {
+      width: 120px;
+      height: 34px;
+      float: right; }
+
+#footer {
+  width: 100%;
+  background: #f9f9f9; }
+
+.footTopBox {
+  background: #333; }
+
+.footTop {
+  width: 1200px;
+  margin: 0 auto;
+  height: 84px;
+  border-bottom: 1px solid #494949; }
+  .footTop .footerContact {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    font-family: 微软雅黑;
+    padding: 22px 0px;
+    margin: 0; }
+    .footTop .footerContact .publicIcon {
+      width: 40px;
+      height: 40px;
+      margin-right: 18px;
+      display: inline-block;
+      float: left;
+      font-style: italic;
+      background: url(../img/xuebitu.png) no-repeat -144px -22px; }
+    .footTop .footerContact span {
+      font-size: 14px;
+      color: #fff;
+      margin-right: 8px;
+      display: inline-block;
+      float: left; }
+  .footTop .footerTopRight {
+    float: right;
+    height: 32px;
+    padding: 26px 0;
+    margin: 0; }
+    .footTop .footerTopRight .ftRight-tit {
+      font-size: 12px;
+      float: left;
+      line-height: 32px;
+      color: white;
+      font-family: 微软雅黑;
+      padding-right: 10px;
+      padding: 0;
+      margin: 0; }
+    .footTop .footerTopRight .ftRight-form {
+      float: left;
+      width: 240px;
+      height: 30px;
+      border: 1px solid #494949;
+      position: relative; }
+      .footTop .footerTopRight .ftRight-form input {
+        width: 190px;
+        height: 30px;
+        line-height: 30px;
+        padding: 0 6px;
+        background: 0;
+        border: 0;
+        float: left;
+        color: #fff;
+        outline: 0;
+        vertical-align: middle;
+        letter-spacing: normal;
+        word-spacing: normal;
+        text-transform: none;
+        text-indent: 0px;
+        text-shadow: none;
+        display: inline-block;
+        text-align: start;
+        font: 400 13.3333px Arial; }
+      .footTop .footerTopRight .ftRight-form span {
+        display: inline-block;
+        height: 30px;
+        line-height: 30px;
+        color: #999;
+        position: absolute;
+        left: 6px;
+        top: 0; }
+      .footTop .footerTopRight .ftRight-form .publicIcon {
+        display: inline-block;
+        width: 22px;
+        height: 18px;
+        margin: 6px 0 0 10px;
+        cursor: pointer;
+        float: left;
+        background: url(../img/xuebitu.png) no-repeat;
+        background-position: -133px 0; }
+
+.footSop {
+  margin: 0 auto;
+  width: 1200px;
+  overflow: hidden;
+  padding: 30px 0 60px; }
+  .footSop .ser01 {
+    width: 158px;
+    float: left;
+    display: inline;
+    margin-right: 15px; }
+    .footSop .ser01 h3 {
+      font-weight: normal;
+      height: 26px;
+      line-height: 26px;
+      padding: 5px 0; }
+      .footSop .ser01 h3 i {
+        display: inline-block;
+        width: 26px;
+        height: 26px;
+        margin-right: 9px;
+        float: left;
+        background: url(../img/xuebitu.png) no-repeat;
+        background-position: 0 -131px; }
+      .footSop .ser01 h3 span {
+        display: inline-block;
+        width: 123px;
+        font-size: 14px;
+        color: white;
+        font-family: 微软雅黑;
+        float: left;
+        white-space: nowrap;
+        overflow: hidden; }
+    .footSop .ser01 p {
+      width: 123px;
+      height: 26px;
+      line-height: 26px;
+      padding-left: 35px;
+      overflow: hidden;
+      white-space: nowrap; }
+      .footSop .ser01 p a {
+        color: #ccc; }
+        .footSop .ser01 p a:hover {
+          text-decoration: underline; }
+  .footSop .weiboxin {
+    width: 158px;
+    float: left;
+    padding: 10px 0; }
+    .footSop .weiboxin i {
+      display: inline-block;
+      width: 28px;
+      height: 28px;
+      cursor: pointer;
+      float: left;
+      margin-right: 9px;
+      background: url(../img/xuebitu.png) no-repeat; }
+    .footSop .weiboxin .weibo {
+      width: 130px;
+      height: 28px; }
+    .footSop .weiboxin .weixin {
+      width: 130px;
+      height: 28px;
+      margin-top: 13px; }
+
+.footBotBox {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0 40px; }
+  .footBotBox .footerBotLeft {
+    float: left;
+    width: 760px;
+    overflow: hidden; }
+    .footBotBox .footerBotLeft p {
+      margin: 0;
+      padding: 0;
+      text-align: left;
+      line-height: 20px; }
+    .footBotBox .footerBotLeft .footerInfo {
+      height: 16px;
+      padding: 4px 0;
+      overflow: hidden;
+      position: relative;
+      left: -8px;
+      margin-left: 0; }
+      .footBotBox .footerBotLeft .footerInfo a {
+        display: inline-table;
+        height: 16px;
+        line-height: 16px;
+        padding: 0 8px;
+        overflow: hidden;
+        position: relative;
+        color: #666; }
+    .footBotBox .footerBotLeft .friendLink {
+      padding: 17px 0 3px 0;
+      color: #999;
+      height: 20px;
+      width: 740px; }
+      .footBotBox .footerBotLeft .friendLink span {
+        display: inline-block;
+        float: left;
+        height: 20px;
+        max-width: 700px;
+        overflow: hidden;
+        position: relative;
+        z-index: 0;
+        left: -5px; }
+      .footBotBox .footerBotLeft .friendLink a {
+        color: #999;
+        margin: 0 5px; }
+    .footBotBox .footerBotLeft .copybot a {
+      display: inline-table;
+      margin-right: 5px; }
+  .footBotBox .footerBotCode {
+    width: 240px;
+    float: left;
+    text-align: center;
+    padding-top: 20px; }
+    .footBotBox .footerBotCode div {
+      float: left;
+      width: 80px;
+      display: inline;
+      margin-left: 40px; }
